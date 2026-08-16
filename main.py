@@ -8,7 +8,10 @@ app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",
+        "https://soybean-web.onrender.com",
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
